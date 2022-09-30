@@ -1,0 +1,126 @@
+body {
+    background-image: url("/images/mockup-photos-5nUNdLueQio-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table {
+    position: relative;
+    margin: auto;
+    border-spacing: 0;
+}
+
+.title {
+    position: relative;
+    color: #fff;
+    mix-blend-mode: darken;
+    text-shadow: 0 0 0.05em rgba(0, 0, 0, 0.8), -0.025em 0.025em 0.1em #000, -0.05em 0.05em 0.1em #000, -0.1em 0.1em 0.3em #000, -0.1em 0.1em 0.5em rgba(0, 0, 0, 0.5);
+    font-family: "Muli", sans-serif;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.black-cell {
+    display: inline-block;
+    background: #292526;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffc57a;
+}
+
+.red-cell {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #DC143C;
+    border: 2px solid #ffc57a;
+}
+
+.black-piece {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    padding: 6px;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 10px;
+    box-shadow: 0px 0px 0px 5px black;
+}
+
+.white-piece {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    padding: 6px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin: 10px;
+    box-shadow: 0px 0px 0px 5px white;
+}
+
+.selected {
+    background-color: #724642;
+}
+
+.possible-move {
+    background-color: #54645c;
+}
+
+#turn {
+    background-color: #fff;
+    text-align: center;
+    margin-left: 50%;
+    margin-bottom: 10px;
+    transform: translate(-50%);
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px rgb(63, 56, 56);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.winnerMessage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 20px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    background-color: #3c3b3b;
+    border-radius: 10px;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.resetButton {
+    color: white;
+    position: absolute;
+    left: 50%;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #060408;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+}
+
+.king-symbol {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    margin: 10px;
+    padding: 6px;
+}
+
+.highlight {
+    position: relative;
+    box-shadow: 0px 0px 0px 2px black;
+}
